@@ -1,0 +1,143 @@
+
+// Grid box
+@for $i from 1 through 12 {
+	.u_col-#{$i} {
+		flex: 0 0 ($i/12) * 100%;
+		max-width: ($i/12) * 100%;
+		padding: 0 10px;
+	}
+}
+
+// Margin and Padding
+@for $i from 0 through 30 {
+	.u_m-#{$i} {
+		$margin: $i * 1px;
+		margin: $margin;
+	}
+	.u_mt-#{$i} {
+		$margin: $i * 1px;
+		margin-top: $margin;
+	}
+	.u_mr-#{$i} {
+		$margin: $i * 1px;
+		margin-right: $margin;
+	}
+	.u_mb-#{$i} {
+		$margin: $i * 1px;
+		margin-bottom: $margin;
+	}
+	.u_ml-#{$i} {
+		$margin: $i * 1px;
+		margin-left: $margin;
+	}
+	.u_mx-#{$i} {
+		$margin: $i * 1px;
+		margin-left: $margin;
+		margin-right: $margin;
+	}
+	.u_p-#{$i} {
+		$padding: $i * 1px;
+		padding: $padding;
+	}
+	.u_pt-#{$i} {
+		$padding: $i * 1px;
+		padding-top: $padding;
+	}
+	.u_pr-#{$i} {
+		$padding: $i * 1px;
+		padding-right: $padding;
+	}
+	.u_pb-#{$i} {
+		$padding: $i * 1px;
+		padding-bottom: $padding;
+	}
+	.u_pl-#{$i} {
+		$padding: $i * 1px;
+		padding-left: $padding;
+	}
+	.u_py-#{$i} {
+		$padding: $i * 1px;
+		padding-top: $padding;
+		padding-bottom: $padding;
+	}
+	.u_px-#{$i} {
+		$padding: $i * 1px;
+		padding-left: $padding;
+		padding-right: $padding;
+	}
+}
+
+// dynamic height
+@for $i from 1 through 50 {
+	$height: $i * 1px;
+	.u_h-#{$i} {
+		height: $height;
+	}
+}
+/* Font Styles */
+@mixin defaultFontStyle( $fontWeight: null, $fontSize: null, $lineHeight: null, $color: null) {
+	font: normal $fontWeight ($fontSize / 10)+rem / ($lineHeight / 10)+rem 'Mulish', sans-serif;
+	color: $color;
+}
+
+/* Meadia fonts */
+@mixin mediaFontStyle( $fontSize: null, $lineHeight: null) {
+	font-size: ($fontSize / 10)+rem;
+	line-height: ($lineHeight / 10)+rem;
+}
+
+/* Background Opacity */
+@mixin backgroundOpacity($bgColor, $opacity: null) {
+	background: rgba($bgColor, $opacity);
+}
+
+// Transitions
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	transition: $transition;
+}
+
+/// Width and height
+@mixin square($pixels: null) {
+	width: $pixels;
+	height: $pixels;
+}
+
+// Media Queries
+@mixin mediaQuery ($point) {
+	@media screen and (max-width:$point) {
+		@content;
+	}
+}
+@mixin minmediaQuery ($point) {
+	@media screen and (min-width:$point) {
+		@content;
+	}
+}
+@mixin customMaxHeightMedia($screen) {
+	@media (max-height: $screen+'px') {
+		@content;
+	}
+}
+
+@mixin customMaxMedia($screen) {
+	@media (max-width: $screen+'px') {
+		@content;
+	}
+}
+
+// Custom devices
+@mixin customMedia($screen) {
+	@media (min-width: $screen+'px') {
+		@content;
+	}
+}
+
+// Content - Before, After
+@mixin content {
+	content: '';
+	position: absolute;
+}
