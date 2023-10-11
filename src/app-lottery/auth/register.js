@@ -10,7 +10,7 @@ const Register = () => {
                     towards the world's biggest jackpots.</h5>
                 <div className="u_p-20">
                     <div className="l_row">
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <input
                                 onChange={(e) => console.log(">>>>")}
                                 type="text"
@@ -18,7 +18,7 @@ const Register = () => {
                                 autoComplete="off"
                             />
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <input
                                 onChange={(e) => console.log(">>>>")}
                                 type="text"
@@ -26,7 +26,7 @@ const Register = () => {
                                 autoComplete="off"
                             />
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <input
                                 onChange={(e) => console.log(">>>>")}
                                 type="email"
@@ -34,7 +34,7 @@ const Register = () => {
                                 autoComplete="off"
                             />
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <input
                                 onChange={(e) => console.log(">>>>")}
                                 type="text"
@@ -42,17 +42,17 @@ const Register = () => {
                                 autoComplete="off"
                             />
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <p className="l_text-left">
                                 I understand that I will receive targeted marketing messages and can change my contact preferences in the "My Account" section on the site at any time, or Unsubscribe through the Unsubscribe link provided in all email messages themselves.
                             </p>
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <p className="l_text-left">
                                 By clicking Submit below. I confirm I am 18+ and have read and accept the T&Cs and Privacy Policy.
                             </p>
                         </div>
-                        <div className="u_col-12 l_input btn">
+                        <div className="l_col-12 l_input btn">
                             <button>
                                 Submit and Continue
                             </button>

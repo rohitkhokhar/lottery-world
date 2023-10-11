@@ -1,7 +1,7 @@
 
 // Grid box
 @for $i from 1 through 12 {
-	.u_col-#{$i} {
+	.l_col-#{$i} {
 		flex: 0 0 ($i/12) * 100%;
 		max-width: ($i/12) * 100%;
 		padding: 0 10px;
@@ -10,30 +10,35 @@
 
 // Margin and Padding
 @for $i from 0 through 30 {
-	.u_m-#{$i} {
+	.l_m-#{$i} {
 		$margin: $i * 1px;
 		margin: $margin;
 	}
-	.u_mt-#{$i} {
+	.l_mt-#{$i} {
 		$margin: $i * 1px;
 		margin-top: $margin;
 	}
-	.u_mr-#{$i} {
+	.l_mr-#{$i} {
 		$margin: $i * 1px;
 		margin-right: $margin;
 	}
-	.u_mb-#{$i} {
+	.l_mb-#{$i} {
 		$margin: $i * 1px;
 		margin-bottom: $margin;
 	}
-	.u_ml-#{$i} {
+	.l_ml-#{$i} {
 		$margin: $i * 1px;
 		margin-left: $margin;
 	}
-	.u_mx-#{$i} {
+	.l_mx-#{$i} {
 		$margin: $i * 1px;
 		margin-left: $margin;
 		margin-right: $margin;
+	}
+	.l_my-#{$i} {
+		$margin: $i * 1px;
+		margin-top: $margin;
+		margin-bottom: $margin;
 	}
 	.u_p-#{$i} {
 		$padding: $i * 1px;

@@ -1,0 +1,288 @@
+.l_lotto {
+  &-india {
+    .header {
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid #000000;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &-how {
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      color: #000000;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+      li {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .banking {
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      thead {
+        border: 1px #ddd solid;
+        background-color: #f8f8f8;
+      }
+      td, th {
+        padding: 8px;
+        line-height: 1.4;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &-faq {
+    &-inner {
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+
+        &:nth-child(odd) {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &-play {
+    &-header {
+      display: block;
+      width: auto;
+      height: 80px;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      background: linear-gradient(to right, #ef7e0e, #ef7e0e);
+
+      &-table {
+        display: table;
+        float: left;
+        width: auto;
+        height: 80px;
+        padding: 0;
+      }
+
+      &-row {
+        display: table-row;
+        width: auto;
+        height: auto;
+      }
+
+      &-cell {
+        display: table-cell;
+        width: auto;
+        height: 80px;
+        padding: 0;
+        vertical-align: middle;
+
+        &.cell-logo {
+          padding: 0 0 0 20px;
+        }
+
+        &.cell-brand-name {
+          padding: 0 0 0 10px;
+          font-size: 23px;
+          color: #fff;
+          font-weight: 700;
+        }
+
+        &.cell-vertical-line {
+          padding: 0 0 0 20px;
+
+          .c-vertical-line {
+            display: inline-block;
+            width: 1px;
+            height: 66px;
+            margin: 7px 0 0 0;
+            padding: 0 0 0 0;
+            background-color: #fff;
+          }
+        }
+
+        &.cell-prize {
+          padding: 0 0 0 20px;
+          font-family: "Open Sans", sans-serif;
+          font-size: 45px;
+          color: #fff;
+          font-weight: 800;
+        }
+
+        &.cell-timer {
+          padding: 0 0 0 20px;
+
+          .c-timer {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin: 0 0 0 0;
+            padding: 0 0 0 20px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 600;
+            background: Transparent url("https://in.lotteryworld.com/Media/widgets/plugin-beton/ver-02/images/clock.png") 0px 3px no-repeat;
+          }
+        }
+      }
+
+      &-command {
+        display: inline-block;
+        float: right;
+        width: auto;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+
+        button {
+          border: none;
+          outline: none;
+          display: inline-block;
+          width: auto;
+          height: 80px;
+          min-width: 80px;
+          padding: 0 10px 0 10px;
+          background-color: rgba(0, 0, 0, 0.3);
+          background-repeat: no-repeat;
+          background-position-x: center;
+          border-radius: 0px;
+
+          &:first-child {
+            background-image: url("https://in.lotteryworld.com/Media/widgets/plugin-beton/ver-02/images/btn-quick-pick.png");
+            background-position-y: 19px;
+          }
+
+          &:last-child {
+            background-image: url("https://in.lotteryworld.com/Media/widgets/plugin-beton/ver-02/images/btn-clear.png");
+            background-position-y: 24px;
+          }
+
+          div {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin: 33px 0 0 0;
+            padding: 0 0 0 0;
+            font-size: 12px;
+            color: white;
+            text-transform: uppercase;
+          }
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.u_checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.u_checkbox label {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.u_checkbox label:before {
+  content: "";
+  -webkit-appearance: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.u_checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.u_checkbox input:checked + label:before {
+  border: solid green;
+  background-color: green;
+  padding: 7px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.u_checkbox {
+  span {
+    @include defaultFontStyle(500, 14, 20, #000000);
+  }
+  &-checked {
+    span {
+      color: #000000;
+    }
+  }
+  &-disable {
+    opacity: 0.5;
+  }
+  input {
+    &:checked {
+      + label {
+        span {
+          color: #000000;
+        }
+      }
+    }
+  }
+}

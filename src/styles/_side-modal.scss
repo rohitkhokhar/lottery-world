@@ -48,7 +48,7 @@
       }
 
       .u_side-modal-footer {
-        .u_col-6 {
+        .l_col-6 {
           @include mediaQuery(768px) {
             flex: 0 0 50%;
             max-width: 50%;
@@ -111,7 +111,7 @@
       }
     }
 
-    .u_col-6 {
+    .l_col-6 {
       @include mediaQuery(576px) {
         flex: 0 0 100%;
         max-width: 100%;
@@ -141,7 +141,7 @@
       }
     }
 
-    div[class*='u_col'] {
+    div[class*='l_col'] {
       @include mediaQuery(768px) {
         &:empty {
           display: none;
@@ -155,7 +155,7 @@
       }
     }
 
-    .u_col-6 {
+    .l_col-6 {
       &:empty {
         @include mediaQuery(768px) {
           display: none;
@@ -163,7 +163,7 @@
       }
     }
 
-    .u_col-3 {
+    .l_col-3 {
       @include mediaQuery(768px) {
         padding: 0 5px;
         flex: 0 0 auto;
@@ -172,7 +172,7 @@
 
     .u_row {
 
-      .u_col-2 {
+      .l_col-2 {
         @include mediaQuery(768px) {
           flex: 0 0 auto;
           max-width: 100%;

@@ -1,58 +1,335 @@
-import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
-import SideModal from "../components/side-modal";
-import Register from "./auth/register";
-import SignIn from "./auth/signin";
+import React from 'react';
+import Navbar from "./navbar";
 
 const Lottery = () => {
-    const history = useNavigate();
-
-    const [register, setRegister] = useState(false);
-    const [signin, setSignin] = useState(false);
 
     return (
         <React.Fragment>
-            <nav className="navbar">
-                <div className="navbar-container container">
-                    <input type="checkbox" name="" id=""/>
-                    <div className="hamburger-lines">
-                        <span className="line line1"/>
-                        <span className="line line2"/>
-                        <span className="line line3"/>
+            <Navbar/>
+            <div className="">
+                <div className='Container-fluid2'>
+                    <div className='container'>
+                        <div className='img l_relative'>
+                            <img id="img1"
+                                 src="https://jackpotcom-res.cloudinary.com/image/upload/v1596026295/LotteryWorld/homepage/powerball.jpg"/>
+                            <div className='img-text'>
+                                <p id="p18">Us PowerBall</p>
+                                <p id="p19">Win ₹128.8 Billion!</p>
+                                <button className='btn btn5'>Play</button>
+                            </div>
+                        </div>
+                        <div className='l_absolute'>
+                            <h1 className='h1'>LOTTER WORLD INDIA</h1>
+                        </div>
                     </div>
-                    <ul className="menu-items">
-                        <li className="sign-up" onClick={() => setRegister(true)}>
-                            <img src="images/register.svg"/>
-                            <a href="#">Register</a>
-                        </li>
-                        <li className="sign-in" onClick={() => setSignin(true)}>
-                            <img src="images/signin.svg"/>
-                            <a href="#">Sign In</a>
-                        </li>
-                        <li className="cart">
-                            <img src="images/basket.svg"/>
-                            <a href="#">Basket</a>
-                        </li>
-                    </ul>
-                    <h1 className="logo"><img src="images/lotteryworld-logo.svg"/></h1>
                 </div>
-            </nav>
+                <div className='container-fluid3'>
+                    <div className='container'>
+                        <div className='lottri_details'>
+                            <div className='div1'>
+                                <img src="https://in.lotteryworld.com/Media/App/images/brands/brand-8/logo-ball-big.png"
+                                     className='img1'/>
+                                <p id="p2">Mega Millons</p><br></br><br></br>
+                                <h1 id="h1">₹1.6</h1>
+                                <h1 id="h2">Billion</h1>
+                                <p id="p4">3 days 9 hrs</p>
+                                <div className='overlay1'>
+                                    <button className='btn btn3'>Play</button>
+                                    <p id="p9">
+                                        4 Quick Picks For <br>
+                                    </br>Only ₹1200.00
+                                    </p>
+                                </div>
 
-            {register && <SideModal
-                open={register}
-                maxWidth={500}
-                onClose={() => setRegister(false)}
-            >
-                <Register/>
-            </SideModal>}
+                            </div>
+                            <div className='div1'>
+                                <img
+                                    src="https://in.lotteryworld.com/Media/App/images/brands/brand-55/logo-ball-big.png"
+                                    className='img1'/>
+                                <p id="p2">South Africa daily Lotto</p><br></br><br></br>
+                                <h1 id="h1">₹1.9</h1>
+                                <h1 id="h2">Million</h1>
+                                <p id="p4">01:49:02</p>
+                                <div className='overlay1'>
+                                    <button className='btn btn3'>Play</button>
+                                    <p id="p9">
+                                        3 Quick Picks For <br>
+                                    </br>Only ₹67.50
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='div1'>
+                                <img
+                                    src="https://in.lotteryworld.com/Media/App/images/brands/brand-33/logo-ball-big.png"
+                                    className='img1'/>
+                                <p id="p2">Lotto India</p><br></br><br></br>
+                                <h1 id="h1">₹40</h1>
+                                <h1 id="h2">Million</h1>
+                                <p id="p4">2 days 18 hrs</p>
+                                <div className='overlay1'>
+                                    <button className='btn btn3'>Play</button>
+                                    <p id="p9">
+                                        3 Quick Picks For <br>
+                                    </br>Only ₹120.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='div1'>
+                                <img src="https://in.lotteryworld.com/Media/App/images/brands/brand-1/logo-ball-big.png"
+                                     className='img1'/>
+                                <p id="p2">EuroMillons</p><br></br><br></br>
+                                <h1 id="h1">₹3.4</h1>
+                                <h1 id="h2">Million</h1>
+                                <p id="p4">3 days</p>
+                                <div className='overlay1'>
+                                    <button className='btn btn3'>Play</button>
+                                    <p id="p9">
+                                        3 Quick Picks For <br>
+                                    </br>Only ₹900.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='div1'>
+                                <img
+                                    src="https://in.lotteryworld.com/Media/App/images/brands/brand-39/logo-ball-big.png"
+                                    className='img1'/>
+                                <p id="p2">Cash For Life</p>
+                                {/* <p id="p3">₹</p> */}
+                                <h1 id="h3">80,000/day</h1>
+                                <h1 id="h2">For Life</h1>
+                                <p id="p4">06:30:30</p>
+                                <div className='overlay1'>
+                                    <button className='btn btn3'>Play</button>
+                                    <p id="p9">
+                                        3 Quick Picks For <br>
+                                    </br>Only ₹840.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='container1'>
+                            <div className='details'>
+                                <p id="p5">Welcome to Lottery World India where you can <b>play all the major
+                                    lotteries</b> from around the World <b>no matter where you live.</b> And you can do
+                                    it all on your phone or from the convenience of your own home. Your winnings will be
+                                    paid in full into your own account, so there is no need to visit the USA, Europe or
+                                    wherever the draws take place.</p>
+                                <button className='btn btn1'>Click here to view all lotteries</button>
+                                <p id="p6">PLAY THE WORLD'S BIGGEST LOTTERIES FROM INDIA</p>
+                                <p id="p7">You will find all of the World's biggest Lotteries on Lottery World,
+                                    including Powerball and MegaMillions from the USA where jackpots regularly reach
+                                    over a billion dollars! Hot on their heels are the European Lotto games of
+                                    EuroMillions and Eurojackpot. While they don't reach the record jackpot levels of
+                                    the American games, you probably wouldn't say no to ₹844 Crore or more?</p>
+                                <p id="p6">LOTTO MADE EASY</p>
+                                <p id="p7">All you need to do to start playing right now is Sign In to the site with
+                                    your email address. Simple! Then you can choose which lotto or lottery game you'd
+                                    like to enter and pay for your entries. It really is that easy!</p>
+                            </div>
+                            <div className='live_casino'>
+                                <div className='demo'>
+                                    <p id="p8">Live Casino</p>
+                                    <button className='btn btn2'>MORE</button>
+                                </div>
+                            </div>
+                            <div className='container'>
+                                <div className='casino_details'>
+                                    <div className='div2'>
+                                        <img
+                                            src='https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/150/216x216.png'/>
+                                        <div className='details3'>
+                                            <p id="p11">Ultimate Sic Bo</p>
+                                        </div>
+                                        <div className='overlay2'>
+                                            <button className='btn btn6'>Play</button>
+                                        </div>
+                                    </div>
+                                    <div className='div2'>
+                                        <img
+                                            src='https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/102/216x216.png'/>
+                                        <div className='details3'>
+                                            <p id="p11">Portomaso Real Casino</p>
+                                        </div>
+                                        <div className='overlay2'>
+                                            <button className='btn btn6'>Play</button>
+                                        </div>
+                                    </div>
 
-            {signin && <SideModal
-                open={signin}
-                maxWidth={500}
-                onClose={() => setSignin(false)}
-            >
-                <SignIn/>
-            </SideModal>}
+                                    <div className='div2'>
+                                        <img
+                                            src='https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/144/216x216.png'/>
+                                        <div className='details3'>
+                                            <p id="p11">Cricket war</p>
+                                        </div>
+                                        <div className='overlay2'>
+                                            <button className='btn btn6'>Play</button>
+                                        </div>
+                                    </div>
+
+                                    <div className='div2'>
+                                        <img
+                                            src='https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/90/216x216.png'/>
+                                        <div className='details3'>
+                                            <p id="p11">Baccarat Super Six</p>
+                                        </div>
+                                        <div className='overlay2'>
+                                            <button className='btn btn6'>Play</button>
+                                        </div>
+                                    </div>
+
+                                    <div className='div2'>
+                                        <img
+                                            src='https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/105/216x216.png'/>
+                                        <div className='details3'>
+                                            <p id="p11">OTT Andar Bahar</p>
+                                        </div>
+                                        <div className='overlay2'>
+                                            <button className='btn btn6'>Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br></br>
+                                <hr></hr>
+                            </div>
+                            <div className='live_casino'>
+                                <div className='demo'>
+                                    <p id="p8">Scratchcards</p>
+                                    <button className='btn btn2'>MORE</button>
+                                </div>
+                            </div>
+                            <div className='container'>
+                                <div className='cardS'>
+                                    <div className='card_details'>
+                                        <div className='div3'>
+                                            <div id="demo1">
+                                                <p id="p12">Play Demo | Help</p>
+                                            </div>
+                                            <p id="p13">Mega Love</p>
+                                            <p id="p14">Win Up ₹5 Lakh</p>
+                                            <hr></hr>
+                                            <div className='image_details'>
+                                                <img id="image2"
+                                                     src="https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/7/640x331.png"/>
+                                                <div id="inputs">
+                                                    <div><input type='radio' name="Game" id="in1"/>1 Games ₹50.00</div>
+                                                    <div><input type='radio' name="Game" id="in1"/>5 Games ₹250.00</div>
+                                                    <div><input type='radio' name="Game" id="in1"/>10 Games ₹500.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button className='btn btn4'>Play</button>
+                                        </div>
+                                        <div className='div3'>
+                                            <div id="demo1">
+                                                <p id="p12">Play Demo | Help</p>
+                                            </div>
+                                            <p id="p13">Fruit Basket</p>
+                                            <p id="p14">Win Up ₹10 Lakh</p>
+                                            <hr></hr>
+                                            <div className='image_details'>
+                                                <img id="image2"
+                                                     src="https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/6/640x331.png"/>
+                                                <div id="inputs">
+                                                    <div><input type='radio' name="Game" id="in1"/>1 Games ₹100.00</div>
+                                                    <div><input type='radio' name="Game" id="in1"/>5 Games ₹500.00</div>
+                                                    <div><input type='radio' name="Game" id="in1"/>10 Games ₹1000.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button className='btn btn4'>Play</button>
+                                        </div>
+                                        <div className='div3'>
+                                            <div id="demo1">
+                                                <p id="p12">Play Demo | Help</p>
+                                            </div>
+                                            <p id="p13">BarnVille</p>
+                                            <p id="p14">Win Up ₹10 Lakh</p>
+                                            <hr></hr>
+                                            <div className='image_details'>
+                                                <img id="image2"
+                                                     src="https://jackpotcom-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto/v25/general/games/7/2/640x331.png"/>
+                                                <div id="inputs">
+                                                    <div><input type='radio' name="Game" id="in1"/>1 Games ₹100.00</div>
+                                                    <div><input type='radio' name="Game" id="in1"/>5 Games ₹500.00</div>
+                                                    <div><input type='radio' name="Game" id="in1"/>10 Games ₹1000.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button className='btn btn4'>Play</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='container-fluid'>
+                        <div className='details1'>
+                            <div className='container'>
+                                <div className="online_trasation_image">
+                                    <div>
+                                        <img
+                                            src="https://jackpotcom-res.cloudinary.com/image/upload/v1499172393/WWW/Content/Footer/EmptyLayout/Visa_Inc_logo_color.png"
+                                            id="image3"/>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="https://jackpotcom-res.cloudinary.com/image/upload/v1587046035/UK/Content/Footer%20v2/mastercard_logo_32.png"
+                                            id="image3"/>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="https://jackpotcom-res.cloudinary.com/image/upload/v1599223324/LotteryWorld/Footer/net-banking.png"
+                                            id="image3"/>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="https://jackpotcom-res.cloudinary.com/image/upload/v1599223694/LotteryWorld/Footer/upi-banking.png"
+                                            id="image4"/>
+                                    </div>
+                                </div>
+                                <div className='about_company'>
+                                    <div className='support'>
+                                        <p id="p15">Support</p>
+                                        <p id="p16">Contact Us</p>
+                                        <p id="p16">How To Play</p>
+                                        <p id="p16">FAQ</p>
+                                    </div>
+                                    <div className='company'>
+                                        <p id="p15">Company</p>
+                                        <p id="p16">About Us</p>
+                                        <p id="p16">Affiliate Program</p>
+                                        <p id="p16"> 18+ Player Protecation</p>
+                                    </div>
+                                    <div className='Legal'>
+                                        <p id="p15">Legal</p>
+                                        <p id="p16">Terms And Condition</p>
+                                        <p id="p16">Promotional Terms And Condition</p>
+                                        <p id="p16">Privcy Policy</p>
+                                        <p id="p16">Site Map</p>
+                                    </div>
+                                </div>
+                                <p id="p17">
+                                    Material Copyright © 2023 Go East. B.V., Emancipatie Boulevard 31, Willemstad,
+                                    Curaçao.
+                                    Lotteryworld.com is operated by Go East B.V., registered in the Commercial Register
+                                    of Curaçao under number 153264 and address Emancipatie Boulevard Dominico F. “Don”
+                                    Martina 31,<br></br> Willemstad, Curaçao.
+                                </p>
+                                <p id="p17">
+                                    Go East B.V. is duly licensed through a sublicense granted by C.I.L. Curaçao
+                                    Interactive Licensing N.V., pursuant to Master Gaming License #5536/JAZ issued by
+                                    the Governor of Curaçao.
+                                    Go East Europe Ltd, registered in Cyprus under registration number HE 411148 and
+                                    located at Athinon, 5 Agios Antonios, Nicosia, 1015, Cyprus, is engaged with payment
+                                    processing.
+                                </p>
+                                <img id="image5"
+                                     src="https://jackpotcom-res.cloudinary.com/image/upload/v1650463590/LotteryWorld/cil-logo.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </React.Fragment>
     );
 };

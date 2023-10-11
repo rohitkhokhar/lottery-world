@@ -8,7 +8,7 @@ const SignIn = () => {
                     className="u_pb-10">SIGN IN</h4>
                 <div className="u_p-20">
                     <div className="l_row">
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <input
                                 onChange={(e) => console.log(">>>>")}
                                 type="email"
@@ -16,7 +16,7 @@ const SignIn = () => {
                                 autoComplete="off"
                             />
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <input
                                 onChange={(e) => console.log(">>>>")}
                                 type="text"
@@ -24,10 +24,10 @@ const SignIn = () => {
                                 autoComplete="off"
                             />
                         </div>
-                        <div className="u_col-12 l_input u_mb-15">
+                        <div className="l_col-12 l_input l_mb-15">
                             <a href="#">Forgot My Password</a>
                         </div>
-                        <div className="u_col-12 l_input btn u_mt-10">
+                        <div className="l_col-12 l_input btn l_mt-10">
                             <button style={{width: "auto"}}>
                                 Sign In
                             </button>
