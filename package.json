@@ -8,6 +8,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.5.1",
     "css-loader": "^6.8.1",
+    "fa-icons": "^0.2.0",
     "node-sass": "^9.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^7.3.3",

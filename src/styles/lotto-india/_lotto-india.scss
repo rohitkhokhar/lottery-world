@@ -209,7 +209,141 @@
   }
 }
 
+//For Ticket Box
+.ticket-box {
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 15px 25px 0;
+  list-style: none;
 
+  &:hover {
+    padding-bottom: 15px;
+    margin-top: -20px;
+
+    .ticket-box-header-top {
+      display: block;
+    }
+    .number-checkbox {
+      a {
+        color: #ef7e0e;
+      }
+    }
+  }
+
+  &-inner {
+    display: inline-block;
+    width: 170px;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 1px solid #c7c7c7;
+    background-color: #fff;
+  }
+
+  &-body {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 0 8px 8px 12px;
+  }
+
+  &-header {
+    &-top {
+      display: none;
+      width: 100%;
+      height: 34px;
+      margin: 0 0 0 0;
+      padding: 3px 0 0 0;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      background-color: #ef7e0e;
+
+      button {
+        width: auto;
+        height: auto;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+      }
+
+      button {
+        img {
+          width: 12px;
+          height: 12px;
+          filter: invert(1);
+          display: unset;
+        }
+        &.btn-ticket-magic {
+          min-width: 100px;
+          padding: 3px 8px 2px 8px;
+          margin: 3px 0 0 0;
+          background-color: #FF8000;
+
+        }
+        &.btn-ticket-clear {
+          position: absolute;
+          padding: 0 0 0 0;
+          margin: 4px 0 0 10px;
+          background-color: transparent;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-bottom {
+      display: block;
+      width: 100%;
+      height: 26px;
+      margin: 0 0 0 0;
+      padding: 4px 0 0 0;
+      font-size: 13px;
+      color: gray;
+      text-align: center;
+      background: transparent;
+    }
+  }
+}
+
+.number-checkbox {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  margin: 3px 5px 3px 0;
+  padding: 3px 0 0 0;
+  border: 1px solid #bcbec0;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: top;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #ccc;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  a {
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  &.orange {
+    border-color: #ef7e0e;
+    color: #ef7e0e;
+    a {
+      color: #ef7e0e;
+    }
+  }
+}
 
 .u_checkbox input {
   padding: 0;
@@ -284,5 +418,190 @@
         }
       }
     }
+  }
+}
+
+.section-title {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.plugin-beton {
+  ul {
+    list-style-type: none;
+  }
+}
+.payment-draws {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 15px 0 0 0;
+  padding: 0 0 0 0;
+
+
+  ul {
+    text-align: center;
+    margin: 10px 0 0 0;
+    li {
+      display: inline-block;
+      padding: 0 2px 8px 2px;
+
+      a {
+        display: inline-block;
+        width: 62px;
+        height: 40px;
+        margin: 0 0 0 0;
+        padding: 10px 0 0 0;
+        background-color: #fff;
+        border: 1px solid #ff8003;
+        border-radius: 20px;
+        font-family: Arial;
+        font-size: 13px;
+        color: #333;
+        &:hover {
+          background-color: #fee9cc;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.payment-separator {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 10px 0 10px 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.payment-subs {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+
+  button.btn-subs {
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 8px 0 8px 0;
+    background-color: #fff;
+    border: 1px solid #ff8003;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .subs-note {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+}
+
+.beton-play-area,.payment-subs  {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: none;
+}
+
+.beton-payment {
+  display: inline-block;
+  /* width: 364px; */
+  width: 366px;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: right;
+  vertical-align: top;
+}
+.payment-amount {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 25px 0 15px 0;
+  padding: 0 0 0 0;
+  .amount-section {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 0;
+
+    &.amount-lines {
+      padding-top: 10px;
+      border-top: 1px solid #c7c7c7;
+    }
+
+    &-title, &-value {
+      display: inline-block;
+      float: left;
+      width: auto;
+      height: auto;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-size: 14px;
+      color: #333;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.beton-actions {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 0;
+  button {
+    &.btn-add-to-cart:disabled {
+      background-color: #c4c0be;
+      cursor: not-allowed;
+      color: #e6e6e6;
+    }
+    &.btn-add-to-cart {
+       width: 100%;
+       height: auto;
+       margin: 0 0 0 0;
+       padding: 10px 40px;
+       font-family: "Open Sans", sans-serif;
+       font-size: 22px;
+       font-weight: 600;
+       color: #fff;
+       background-color: #FF8000;
+     }
   }
 }
